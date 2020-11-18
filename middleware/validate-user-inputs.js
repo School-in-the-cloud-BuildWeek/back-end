@@ -9,7 +9,7 @@ function validateUserInputs(req, res, next) {
     user.name &&
     user.email &&
     user.password &&
-    user.location &&
+    user.confirmPassword &&
     typeof user.password === "string"
   ) {
     next();
