@@ -13,7 +13,7 @@ function makeToken(user) {
     role: user.role,
   };
   const options = {
-    expiresIn: "30 seconds",
+    expiresIn: "8h",
   };
   return jwt.sign(payload, jwtSecret, options);
 }
